@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Search } from "lucide-react";
 
 export default function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");
@@ -7,6 +8,7 @@ export default function SearchBar({ onSearch }) {
     e.preventDefault();
     if (city.trim() !== "") {
       onSearch(city.trim());  
+      setCity("");
     }
   }
 
@@ -14,11 +16,15 @@ export default function SearchBar({ onSearch }) {
     <form onSubmit={handleSubmit}>
       <input 
         type="text"
-        placeholder="Enter the city name"
+        placeholder="Search for a city (e.g., London, New York, Tokyo)"
         value={city}
         onChange={(e) => setCity(e.target.value)}
+        aria-label="City search"
       />
-      <button type="submit">Search</button>
+      <button type="submit" aria-label="Search">
+        <Search size={18} />
+        Search
+      </button>
     </form>
   )
 }
