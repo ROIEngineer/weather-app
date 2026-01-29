@@ -5,13 +5,13 @@ export default function UnitToggle({ units, onChange }) {
         <input 
           type="radio"
           name="units"
-	  value="metric"
-	  checked={units === "metric"}
-	  onChange={() => onChange("metric")}
+          value="metric"
+          checked={units === "metric"}
+          onChange={() => onChange("metric")}
         />
-        °C
+        <span>°C</span>
       </label>
-      <label style={{ marginLeft: "12px" }}>
+      <label>
         <input 
           type="radio"
           name="units"
@@ -19,7 +19,7 @@ export default function UnitToggle({ units, onChange }) {
           checked={units === "imperial"}
           onChange={() => onChange("imperial")}
         />
-        °F
+        <span>°F</span>
       </label>
     </div>
   );
