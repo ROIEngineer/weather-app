@@ -8,8 +8,7 @@ This is a client-side weather application built with React 18 and Vite. The proj
 
 ## Live Demo
 
-**Live Site:** [Your deployed frontend URL]  
-**GitHub Repository:** [Your repository URL]
+**Live Site:** [Frontend URL](https://weather-app-lemon-phi-37.vercel.app/)
 
 ## Features
 
@@ -938,10 +937,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 **Harold Durant**  
-Email: [Your Email]  
+Email: MrDurant2023@gmail.com  
 GitHub: [@ROIEngineer](https://github.com/ROIEngineer)  
-Portfolio: [Your Portfolio URL]
+Portfolio: [Portfolio URL](https://portfolio-web-six-ashen.vercel.app/)
 
----
-
-Built with ❤️ using React, Vite, and OpenWeatherMap API
